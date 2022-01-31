@@ -145,28 +145,6 @@ void Shader::PopulateUniforms() {
 		}
 	}
 
-
-	mUniforms["directionalLights[0].direction"] = glGetUniformLocation(mHandle, "directionalLights[0].direction");
-	mUniforms["directionalLights[0].color"] = glGetUniformLocation(mHandle, "directionalLights[0].color");
-
-	mUniforms["pointLights[0].position"] = glGetUniformLocation(mHandle, "pointLights[0].position");
-	mUniforms["pointLights[0].color"] = glGetUniformLocation(mHandle, "pointLights[0].color");
-	mUniforms["pointLights[0].radius"] = glGetUniformLocation(mHandle, "pointLights[0].radius");
-
-	mUniforms["pointLights[1].position"] = glGetUniformLocation(mHandle, "pointLights[1].position");
-	mUniforms["pointLights[1].color"] = glGetUniformLocation(mHandle, "pointLights[1].color");
-	mUniforms["pointLights[1].radius"] = glGetUniformLocation(mHandle, "pointLights[1].radius");
-
-	mUniforms["spotLights[0].position"] = glGetUniformLocation(mHandle, "spotLights[0].position");
-	mUniforms["spotLights[0].direction"] = glGetUniformLocation(mHandle, "spotLights[0].direction");
-	mUniforms["spotLights[0].cutoff"] = glGetUniformLocation(mHandle, "spotLights[0].cutoff");
-	mUniforms["spotLights[0].color"] = glGetUniformLocation(mHandle, "spotLights[0].color");
-
-	mUniforms["spotLights[1].position"] = glGetUniformLocation(mHandle, "spotLights[1].position");
-	mUniforms["spotLights[1].direction"] = glGetUniformLocation(mHandle, "spotLights[1].direction");
-	mUniforms["spotLights[1].cutoff"] = glGetUniformLocation(mHandle, "spotLights[1].cutoff");
-	mUniforms["spotLights[1].color"] = glGetUniformLocation(mHandle, "spotLights[1].color");
-
 	glUseProgram(0);
 }
 
